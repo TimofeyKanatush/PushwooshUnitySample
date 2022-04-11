@@ -15,6 +15,5 @@
 			<meta-data android:value='unity' android:name='android.app.lib_name' />
 			<meta-data android:value='false' android:name='unityplayer.ForwardNativeEventsToDalvik' />
 		</activity>
-
 	</application>
 </manifest>
