@@ -2,6 +2,7 @@
 using SimpleJSON;
 using System.Collections;
 using System.Collections.Generic;
+using Firebase.Messaging;
 
 /// <summary>
 ///  Pushwoosh sample class
@@ -26,6 +27,9 @@ public class PushNotificator : MonoBehaviour
     // Use this for initialization
     private void Start()
     {
+        FirebaseMessaging.TokenReceived += OnTokenReceived;
+        FirebaseMessaging.MessageReceived += OnMessageReceived;
+
         Pushwoosh.ApplicationCode = "B65BD-9711E";
         Pushwoosh.FcmProjectNumber = "101783084614";
         Pushwoosh.Instance.OnRegisteredForPushNotifications += OnRegisteredForPushNotifications;
@@ -79,6 +83,16 @@ public class PushNotificator : MonoBehaviour
         Pushwoosh.Instance.ScheduleLocalNotification("Hello, Android!", 5, parameters);
         Pushwoosh.Instance.SetNotificationChannelDelegate(new MyNotificationChannelDelegate());
 #endif
+    }
+
+    private void OnTokenReceived(object sender, TokenReceivedEventArgs token)
+    {
+        Debug.Log($"{nameof(OnTokenReceived)}: {token} = {token.Token}");
+    }
+
+    private void OnMessageReceived(object sender, MessageReceivedEventArgs e)
+    {
+        Debug.Log($"{nameof(OnMessageReceived)}: Received a new message from: " + e.Message.From);
     }
 
     public void Update()
