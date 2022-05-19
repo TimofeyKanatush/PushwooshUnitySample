@@ -27,6 +27,7 @@ public class PushNotificator : MonoBehaviour
     // Use this for initialization
     private void Start()
     {
+        FirebaseMessaging.TokenRegistrationOnInitEnabled = true;
         FirebaseMessaging.TokenReceived += OnTokenReceived;
         FirebaseMessaging.MessageReceived += OnMessageReceived;
 
