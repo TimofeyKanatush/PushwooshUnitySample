@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>101783084614-sf3u2e2st4u9d29eejo00grm24h6643q.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.101783084614-sf3u2e2st4u9d29eejo00grm24h6643q</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCM9aDZ48170MJ4K8Aet7J2xBW8Z15AGCU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>101783084614</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.pushwoosh.demoapp</string>
+	<key>PROJECT_ID</key>
+	<string>pushwooshunitysample</string>
+	<key>STORAGE_BUCKET</key>
+	<string>pushwooshunitysample.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:101783084614:ios:cbcef10bd609f439a5b447</string>
+</dict>
+</plist>
